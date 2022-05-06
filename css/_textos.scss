@@ -7,7 +7,7 @@ body {
     background-image: url(/imagen/fondo.jpg);
     background-attachment: fixed;
     background-color: black;
-    background-color:$colorLetras;
+    background-color: #103c3f;
 
 }
 
@@ -21,7 +21,7 @@ body {
  /*contenedor */
 .navegador-cont {
     display: flex;
-    background-color: $colorTexto;
+    background-color: rgba(255, 255, 255, 0.6);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     justify-content: space-around;
     
@@ -48,8 +48,8 @@ body {
 }
 
 .texto {
-    margin: $tamanio;
-    background-color: $colorTexto;
+    margin: 250px;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 10px 5px;
     border-radius: 30px;
 }
@@ -57,7 +57,7 @@ body {
 .text {
     text-align-last: center;
     font-size: 25px;
-    color: $colorLetras;
+    color: #103c3f;
     margin: 15px;
    justify-content: center;
    list-style: none;
@@ -66,120 +66,17 @@ body {
     font-size: 250%;
     font-style: oblique;
     font-weight: 800;
-    color: $colorLetras;
+    color:#103c3f;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    background-color: $colorTexto;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 .text-venta-alquiler{
     margin: 15px;
     text-align: center;
     font-size: 35px;
     margin: 10px;
-    color: $colorLetras;
+    color: #103c3f;
     border-radius: 18px;
 }
- 
-
- /*footer*/
- .links-contenedor {
-    margin-top: $tamanio;
-    text-align: center;
-}
-
-.links {
-    padding: 20px;
-}
-
-.nav-link {
-    margin: 25px;
-    font-size: 25px;
-}
-
-.nav-link a:visited {
-    text-decoration: none;
-    color: #030303;
-}
-
-.nav-link a {
-    text-decoration: none;
-    color: $colorLetras;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.navegador-cont {
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 15px;
-    align-items: center;
-
-    
-}
-.dato {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1 fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(255, 255, 255, 0.6);
-    list-style-position: unset;
-}
-
-.info-1 {
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 10px
-}
-
-.info2 {
-    list-style-type: none;
-
-}
-
-
-
-
-@keyframes color{
-  0%{background-color: #e3e5e5;
-  }
-  100%{background-color: $colorTexto;}
-
- }
-
-
-@media only screen and (max-width:900px){
-    .grid_item {
-        grid-template-columns: auto auto;
-        }
-    }
-    
-@media only screen and (max-width: 600px) {
-    .text {
-        font-size: 18px;
-    }
-
-    .texto {
-        margin: 100px;
-    }
-
-    .navegador {
-        font-size: 18px;
-        margin-left: 0;
-        flex-direction: column;
-
-    }
-  .grid_ventas{
-    grid-template-columns: auto;
-  }
-  .navegador-cont{
-      grid-template-columns: auto;
-      box-shadow: none;
- }
-
-}
- 
